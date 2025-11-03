@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttar Banga Bazaar - Local North Bengal Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <div>
+                        <h1>Uttar Banga Bazaar</h1>
+                        <span>Authentic North Bengal Products</span>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#artisans">Artisans</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products..." id="searchInput">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <button class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Discover Authentic North Bengal</h2>
+                    <p>From Darjeeling's finest teas to Kalimpong's exquisite handicrafts - shop directly from local artisans</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Shop Now</button>
+                        <button class="btn btn-secondary">Meet Artisans</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Local Products</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Local Artisans</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=958&q=80" alt="North Bengal Products">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Categories -->
+    <section class="quick-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-item" data-category="tea">
+                    <i class="fas fa-mug-hot"></i>
+                    <span>Tea & Coffee</span>
+                </div>
+                <div class="category-item" data-category="handicraft">
+                    <i class="fas fa-hands"></i>
+                    <span>Handicrafts</span>
+                </div>
+                <div class="category-item" data-category="spices">
+                    <i class="fas fa-pepper-hot"></i>
+                    <span>Spices</span>
+                </div>
+                <div class="category-item" data-category="textiles">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Textiles</span>
+                </div>
+                <div class="category-item" data-category="food">
+                    <i class="fas fa-utensils"></i>
+                    <span>Local Foods</span>
+                </div>
+                <div class="category-item" data-category="organic">
+                    <i class="fas fa-leaf"></i>
+                    <span>Organic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Products</h2>
+                <p>Handpicked items from local artisans and farmers</p>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Shop by Category</h2>
+                <p>Explore our wide range of authentic North Bengal products</p>
+            </div>
+            <div class="categories-detail-grid">
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1571934811356-5cc061b6821f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80');">
+                        <div class="category-overlay">
+                            <h3>Tea & Coffee</h3>
+                            <p>25+ Products</p>
+                            <button class="btn btn-outline">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=958&q=80');">
+                        <div class="category-overlay">
+                            <h3>Handicrafts</h3>
+                            <p>40+ Products</p>
+                            <button class="btn btn-outline">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80');">
+                        <div class="category-overlay">
+                            <h3>Spices</h3>
+                            <p>30+ Products</p>
+                            <button class="btn btn-outline">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Artisans -->
+    <section class="artisans" id="artisans">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Artisans</h2>
+                <p>Support local craftsmen and their traditional skills</p>
+            </div>
+            <div class="artisans-grid">
+                <div class="artisan-card">
+                    <div class="artisan-image" style="background-image: url('https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80');"></div>
+                    <div class="artisan-details">
+                        <h3>Samrat Das</h3>
+                        <p class="location">Darjeeling Tea Farmer</p>
+                        <p class="specialty">Specializes in organic first flush tea</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5 (128 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artisan-card">
+                    <div class="artisan-image" style="background-image: url('https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80');"></div>
+                    <div class="artisan-details">
+                        <h3>Surajit Dutta</h3>
+                        <p class="location">Kalimpong Handicraft Artist</p>
+                        <p class="specialty">Traditional woolen shawls and crafts</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (89 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artisan-card">
+                    <div class="artisan-image" style="background-image: url('https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80');"></div>
+                    <div class="artisan-details">
+                        <h3>Sayan Roy</h3>
+                        <p class="location">Dooars Spice Farmer</p>
+                        <p class="specialty">Organic cardamom and turmeric</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0 (156 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Special Offers</h2>
+                <p>Don't miss these limited time deals</p>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">25% OFF</div>
+                    <div class="offer-content">
+                        <h3>Darjeeling Tea Combo</h3>
+                        <p>First Flush + Second Flush + Green Tea</p>
+                        <div class="offer-price">
+                            <span class="original-price">₹2,000</span>
+                            <span class="discounted-price">₹1,500</span>
+                        </div>
+                        <button class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-badge">FREE SHIPPING</div>
+                    <div class="offer-content">
+                        <h3>Handicraft Bundle</h3>
+                        <p>Shawl + Bamboo Basket + Dhokra Art</p>
+                        <div class="offer-price">
+                            <span class="original-price">₹3,500</span>
+                            <span class="discounted-price">₹3,500</span>
+                        </div>
+                        <button class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-badge">BUY 2 GET 1</div>
+                    <div class="offer-content">
+                        <h3>Spice Collection</h3>
+                        <p>Cardamom + Turmeric + Cinnamon</p>
+                        <div class="offer-price">
+                            <span class="original-price">₹900</span>
+                            <span class="discounted-price">₹600</span>
+                        </div>
+                        <button class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+                <p>What our customers say about our products</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The Darjeeling tea I ordered was exceptional! Fresh, aromatic, and exactly as described. Will definitely order again!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h5>Priya Sharma</h5>
+                            <span>Mumbai</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The Kalimpong shawl is beautiful and so warm. The craftsmanship is outstanding. Great service and fast delivery!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AR</div>
+                        <div class="author-info">
+                            <h5>Amit Roy</h5>
+                            <span>Kolkata</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Authentic spices from Dooars! The cardamom smells amazing and the turmeric is so fresh. Love supporting local farmers!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info">
+                            <h5>Sunita Roy</h5>
+                            <span>Delhi</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get notified about new products and special offers</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Uttar Banga Bazaar</h3>
+                    <p>Bringing authentic North Bengal products directly from local artisans to your doorstep.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#artisans">Artisans</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Tea & Coffee</a></li>
+                        <li><a href="#">Handicrafts</a></li>
+                        <li><a href="#">Spices</a></li>
+                        <li><a href="#">Textiles</a></li>
+                        <li><a href="#">Organic Foods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Siliguri, West Bengal</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> support@uttarbangabazaar.com</li>
+                        <li><i class="fas fa-clock"></i> 9:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Uttar Banga Bazaar. All rights reserved. | Supporting Local Artisans</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: ₹<span id="cartTotal">0</span></span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
